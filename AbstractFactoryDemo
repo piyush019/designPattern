@@ -1,0 +1,11 @@
+public class AbstractFactoryDemo {
+    public static void main(String[] args){
+        CreditCardFactory factory = CreditCardFactory.getCreditCardFactory(750);
+        CreditCard card = factory.getCreditCard(CardType.PLATINUM);
+        System.out.println(card.getClass());
+
+        factory = CreditCardFactory.getCreditCardFactory(650);
+        CreditCard card2 = factory.getCreditCard(CardType.GOLD);
+        System.out.println(card2.getClass());
+    }
+}
