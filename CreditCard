@@ -1,0 +1,20 @@
+public abstract class CreditCard {
+    private static int cardNumberLength;
+    private static int cscNumber;
+
+    public static int getCardNumberLength() {
+        return cardNumberLength;
+    }
+
+    public static void setCardNumberLength(final int cardNumberLength) {
+        CreditCard.cardNumberLength = cardNumberLength;
+    }
+
+    public static int getCscNumber() {
+        return cscNumber;
+    }
+
+    public static void setCscNumber(final int cscNumber) {
+        CreditCard.cscNumber = cscNumber;
+    }
+}
